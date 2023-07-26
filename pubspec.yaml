@@ -1,0 +1,82 @@
+name: recleatapp
+description: Recleatapp
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  rxdart: ^0.27.5
+  intl: ^0.17.0
+  go_router: ^5.1.1
+  url_strategy: ^0.2.0
+  dio: ^4.0.6
+  location: ^4.4.0
+  flutter_localizations: 
+    sdk: flutter
+  http: ^0.13.3
+  freezed_annotation: ^2.2.0
+  flutter_screenutil: ^5.6.0
+  fluttertoast: ^8.1.1
+  # google_maps_flutter: ^2.2.3
+  flutter_local_notifications: ^12.0.4
+  flutter_riverpod: 2.0.0-dev.9 #^2.1.1
+  loading_indicator: ^3.1.0
+  shared_preferences: ^2.0.17
+  grouped_list: ^5.1.2
+  image_picker: ^0.8.6
+  dotted_border: ^2.0.0  #latest version
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.2
+  freezed: ^2.2.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+  - assets/
+  - assets/images/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.otf
+        - asset: assets/fonts/Montserrat-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Montserrat-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Montserrat-ExtraBold.otf
+          weight: 800
+    - family: AppIcons
+      fonts:
+        - asset: assets/fonts/AppIcons.ttf
+    - family: CromlinDEMO
+      fonts:
+        - asset: assets/fonts/CromlinDEMO-Bold.otf
+          weight: 600
+        - asset: assets/fonts/CromlinDEMO-Medium.otf
+          weight: 500
+        - asset: assets/fonts/CromlinDEMO-Regular.otf
+    - family: LeyendoDEMO
+      fonts:
+        - asset: assets/fonts/LeyendoDEMO-Bold.otf
+          weight: 600
+        - asset: assets/fonts/LeyendoDEMO-Medium.otf
+          weight: 500
+        - asset: assets/fonts/LeyendoDEMO-Regular.otf      
+
