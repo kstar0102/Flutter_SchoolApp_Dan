@@ -16,6 +16,7 @@ import 'package:recleatapp/src/utils/string_validators.dart';
 import 'package:recleatapp/src/widgets/dialogs.dart';
 // import 'package:recleatapp/src/widgets/defalut_button.dart';
 import 'package:recleatapp/src/widgets/new_button.dart';
+import 'package:recleatapp/src/widgets/sub_button.dart';
 import 'package:recleatapp/src/widgets/progress_hud.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:recleatapp/src/features/auth/auth_controllers.dart';
@@ -393,7 +394,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen>
                                         padding: EdgeInsets.only(left: 32, right: 32),
                                         child: Row(
                                           children: [
-                                            ElevatedButton(
+                                            SubButton(
+                                              btnType: SubButtonType.SchoolTitle,
                                               onPressed: () {
                                                 Navigator.push(
                                                   context,
@@ -402,25 +404,36 @@ class _LoginScreenState extends ConsumerState<LoginScreen>
                                                           const AddSchoolScreen()),
                                                 );
                                               },
-                                              child: Text('Add School',
-                                                style:TextStyle(
-                                                  color: Color(0XFFB152E0),
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 14
-                                                ),
-                                              ),
-                                              style: ButtonStyle(
-                                                backgroundColor: MaterialStateProperty.all<Color>(Color(0XFFEFDBFE)), // Adjust background color
-                                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                    borderRadius: BorderRadius.circular(8.0), // Adjust border radius
-                                                  ),
-                                                ),
-                                                minimumSize: MaterialStateProperty.all<Size>(Size(160.0, 50.0)), // Adjust button size
-                                              ),
                                             ),
+                                            // ElevatedButton(
+                                            //   onPressed: () {
+                                            //     Navigator.push(
+                                            //       context,
+                                            //       MaterialPageRoute(
+                                            //           builder: (context) =>
+                                            //               const AddSchoolScreen()),
+                                            //     );
+                                            //   },
+                                            //   child: Text('Add School',
+                                            //     style:TextStyle(
+                                            //       color: Color(0XFFB152E0),
+                                            //       fontWeight: FontWeight.bold,
+                                            //       fontSize: 14
+                                            //     ),
+                                            //   ),
+                                            //   style: ButtonStyle(
+                                            //     backgroundColor: MaterialStateProperty.all<Color>(Color(0XFFEFDBFE)), // Adjust background color
+                                            //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                            //       RoundedRectangleBorder(
+                                            //         borderRadius: BorderRadius.circular(8.0), // Adjust border radius
+                                            //       ),
+                                            //     ),
+                                            //     minimumSize: MaterialStateProperty.all<Size>(Size(160.0, 50.0)), // Adjust button size
+                                            //   ),
+                                            // ),
                                             SizedBox(width: 8), // Adjust the spacing between the character and the text
-                                            ElevatedButton(
+                                            SubButton(
+                                              btnType: SubButtonType.AdminTitle,
                                               onPressed: () {
                                                 Navigator.push(
                                                   context,
@@ -429,23 +442,33 @@ class _LoginScreenState extends ConsumerState<LoginScreen>
                                                           const AdminLoginScreen()),
                                                   );
                                               },
-                                              child: Text('Admin Login',
-                                                 style:TextStyle(
-                                                  color: Color(0XFFB152E0),
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 14
-                                                ),
-                                              ),
-                                              style: ButtonStyle(
-                                                backgroundColor: MaterialStateProperty.all<Color>(Color(0XFFEFDBFE)), // Adjust background color
-                                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                                  RoundedRectangleBorder(
-                                                    borderRadius: BorderRadius.circular(8.0), // Adjust border radius
-                                                  ),
-                                                ),
-                                                minimumSize: MaterialStateProperty.all<Size>(Size(160.0, 50.0)), // Adjust button size
-                                              ),
                                             ),
+                                            // ElevatedButton(
+                                            //   onPressed: () {
+                                            //     Navigator.push(
+                                            //       context,
+                                            //       MaterialPageRoute(
+                                            //           builder: (context) =>
+                                            //               const AdminLoginScreen()),
+                                            //       );
+                                            //   },
+                                            //   child: Text('Admin Login',
+                                            //      style:TextStyle(
+                                            //       color: Color(0XFFB152E0),
+                                            //       fontWeight: FontWeight.bold,
+                                            //       fontSize: 14
+                                            //     ),
+                                            //   ),
+                                            //   style: ButtonStyle(
+                                            //     backgroundColor: MaterialStateProperty.all<Color>(Color(0XFFEFDBFE)), // Adjust background color
+                                            //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                            //       RoundedRectangleBorder(
+                                            //         borderRadius: BorderRadius.circular(8.0), // Adjust border radius
+                                            //       ),
+                                            //     ),
+                                            //     minimumSize: MaterialStateProperty.all<Size>(Size(160.0, 50.0)), // Adjust button size
+                                            //   ),
+                                            // ),
                                           ],
                                         ),
                                       ),
